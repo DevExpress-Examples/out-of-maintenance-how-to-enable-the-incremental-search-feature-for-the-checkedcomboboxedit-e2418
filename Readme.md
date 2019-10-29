@@ -1,7 +1,6 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [CustomCheckedComboBoxEdit.cs](./CS/WindowsApplication31/CustomCheckedComboBoxEdit.cs) (VB: [CustomCheckedComboBoxEdit.vb](./VB/WindowsApplication31/CustomCheckedComboBoxEdit.vb))
 * [Form1.cs](./CS/WindowsApplication31/Form1.cs) (VB: [Form1.vb](./VB/WindowsApplication31/Form1.vb))
 * [Program.cs](./CS/WindowsApplication31/Program.cs) (VB: [Program.vb](./VB/WindowsApplication31/Program.vb))
 <!-- default file list end -->
