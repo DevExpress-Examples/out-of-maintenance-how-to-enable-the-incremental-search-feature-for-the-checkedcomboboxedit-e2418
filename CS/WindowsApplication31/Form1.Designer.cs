@@ -1,8 +1,6 @@
 
-namespace DXSample
-{
-    partial class Form1
-    {
+namespace DXSample {
+    partial class Form1 {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -12,10 +10,8 @@ namespace DXSample
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
+        protected override void Dispose(bool disposing) {
+            if(disposing && (components != null)) {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -27,70 +23,43 @@ namespace DXSample
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nwindDataSet = new WindowsApplication31.nwindDataSet();
-            this.employeesTableAdapter = new WindowsApplication31.nwindDataSetTableAdapters.EmployeesTableAdapter();
-            this.customEdit1 = new DXSample.CustomEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customEdit1.Properties)).BeginInit();
+            this.checkedComboBoxEdit = new DevExpress.XtraEditors.CheckedComboBoxEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // employeesBindingSource
+            // checkedComboBoxEdit
             // 
-            this.employeesBindingSource.DataMember = "Employees";
-            this.employeesBindingSource.DataSource = this.nwindDataSet;
-            // 
-            // nwindDataSet
-            // 
-            this.nwindDataSet.DataSetName = "nwindDataSet";
-            this.nwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // employeesTableAdapter
-            // 
-            this.employeesTableAdapter.ClearBeforeFill = true;
-            // 
-            // customEdit1
-            // 
-            this.customEdit1.EditValue = "";
-            this.customEdit1.Location = new System.Drawing.Point(44, 83);
-            this.customEdit1.Name = "customEdit1";
-            this.customEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.checkedComboBoxEdit.EditValue = "";
+            this.checkedComboBoxEdit.Location = new System.Drawing.Point(33, 67);
+            this.checkedComboBoxEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedComboBoxEdit.Name = "checkedComboBoxEdit";
+            this.checkedComboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.customEdit1.Properties.DataSource = this.employeesBindingSource;
-            this.customEdit1.Properties.DisplayMember = "LastName";
-            this.customEdit1.Properties.IncrementalSearch = true;
-            this.customEdit1.Properties.ValueMember = "FirstName";
-            this.customEdit1.Size = new System.Drawing.Size(415, 22);
-            this.customEdit1.TabIndex = 0;
+            this.checkedComboBoxEdit.Properties.DisplayMember = "LastName";
+            this.checkedComboBoxEdit.Properties.IncrementalSearch = true;
+            this.checkedComboBoxEdit.Properties.ValueMember = "FirstName";
+            this.checkedComboBoxEdit.Size = new System.Drawing.Size(311, 20);
+            this.checkedComboBoxEdit.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 322);
-            this.Controls.Add(this.customEdit1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.ClientSize = new System.Drawing.Size(389, 262);
+            this.Controls.Add(this.checkedComboBoxEdit);
             this.Name = "Form1";
             this.Text = "Incremental Search";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CustomEdit customEdit1;
-        private WindowsApplication31.nwindDataSet nwindDataSet;
-        private System.Windows.Forms.BindingSource employeesBindingSource;
-        private WindowsApplication31.nwindDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
-
+        private DevExpress.XtraEditors.CheckedComboBoxEdit checkedComboBoxEdit;
     }
 }
 
